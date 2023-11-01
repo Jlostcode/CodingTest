@@ -1,0 +1,13 @@
+    public static int birthdayCakeCandles(List<Integer> candles) {
+
+int maxCount = 0;
+int max = Collections.max(candles);
+
+for (int candle : candles) {
+    if (candle == max) {
+        maxCount++;
+    }
+}
+return maxCount;
+    }
+}
